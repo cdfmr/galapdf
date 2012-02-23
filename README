@@ -1,0 +1,54 @@
+galapdf
+--------------------------------------------------------------------------------
+
+Galapdf a command line utility to convert Adobe PDF documents based on Xpdf, an
+open source project, it is licensed under the GNU General Public License (GPL),
+version 2. The full text of GPL v2 is listed in file COPYING.
+
+Requirement:
+
+xpdf
+freetype
+freeimage
+
+Usage:
+
+* Show file info
+  galapdf [-opw ownerpassword] [-upw userpassword]
+          [-enc textencoding] filename.pdf
+  
+* Show font info
+  galapdf [-opw ownerpassword] [-upw userpassword] filename.pdf
+  
+* Convert PDF to text
+  galapdf [-opw ownerpassword] [-upw userpassword] [-enc textencoding]
+          [-eol unix|dos|mac] [-pr pagerange] [-raw] -[layout]
+          filename.pdf filename.txt
+          
+* Extract embedded images from PDF
+  galapdf [-opw ownerpassword] [-upw userpassword] [-fmt jpg|png|gif|tif|bmp]
+          [-pr pagerange] [-jq jpegquality] [-j] [-tj] filename.pdf imagefile
+		
+* Convert PDF to image
+  galapdf [-opw ownerpassword] [-upw userpassword] [-pr pagerange]
+          [-r resolution] [-mono] [-gray] [-fmt jpg|png|gif|tif|bmp]
+          [-jq jpegquality] [-mp] [-tj] filename.pdf imagefile
+
+-enc    text encoding
+-eol    end of line
+-fmt    image format
+-gray   grayscale
+-j      dump jpeg stream directly if output format is jpg
+-jq     jpeg quality, 1~100
+-layout keep text layout
+-mono   monoscale
+-mp     create multi-page tiff image
+-opw    wwner password
+-pr     page range, such as 1,2,5-10
+-r      resolution
+-raw    dump raw text
+-tj     save colorful and grayscale tiff images with jpeg compression
+-upw    user password
+
+Homepage:
+	http://github.com/cdfmr/galapdf
