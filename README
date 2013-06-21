@@ -1,9 +1,9 @@
 galapdf
 --------------------------------------------------------------------------------
 
-Galapdf a command line utility to convert Adobe PDF documents based on Xpdf, an
-open source project, it is licensed under the GNU General Public License (GPL),
-version 2. The full text of GPL v2 is listed in file COPYING.
+Galapdf is a command line utility to convert Adobe PDF documents based on Xpdf,
+it is licensed under the GNU General Public License (GPL), version 2. The full
+text of GPL v2 is listed in file COPYING.
 
 Requirement:
 
@@ -22,7 +22,7 @@ Usage:
   
 * Convert PDF to text
   galapdf [-opw ownerpassword] [-upw userpassword] [-enc textencoding]
-          [-eol unix|dos|mac] [-pr pagerange] [-raw] -[layout]
+          [-eol unix|dos|mac] [-pr pagerange] [-raw] [-layout]
           filename.pdf filename.txt
           
 * Extract embedded images from PDF
@@ -43,7 +43,7 @@ Usage:
 -layout keep text layout
 -mono   monoscale
 -mp     create multi-page tiff image
--opw    wwner password
+-opw    owner password
 -pr     page range, such as 1,2,5-10
 -r      resolution
 -raw    dump raw text
