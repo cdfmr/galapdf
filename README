@@ -14,25 +14,29 @@ freeimage
 Usage:
 
 * Show file info
-  galapdf [-opw ownerpassword] [-upw userpassword]
-          [-enc textencoding] filename.pdf
+  galapdf info [-opw ownerpassword] [-upw userpassword] [-enc textencoding]
+               filename.pdf
   
 * Show font info
-  galapdf [-opw ownerpassword] [-upw userpassword] filename.pdf
+  galapdf fonts [-opw ownerpassword] [-upw userpassword]
+                filename.pdf
   
 * Convert PDF to text
-  galapdf [-opw ownerpassword] [-upw userpassword] [-enc textencoding]
-          [-eol unix|dos|mac] [-pr pagerange] [-raw] [-layout]
-          filename.pdf filename.txt
+  galapdf totext [-opw ownerpassword] [-upw userpassword] [-enc textencoding]
+                 [-eol unix|dos|mac] [-pr pagerange] [-raw] [-layout]
+                 filename.pdf filename.txt
           
 * Extract embedded images from PDF
-  galapdf [-opw ownerpassword] [-upw userpassword] [-fmt jpg|png|gif|tif|bmp]
-          [-pr pagerange] [-jq jpegquality] [-j] [-tj] filename.pdf imagefile
+  galapdf extrimgs [-opw ownerpassword] [-upw userpassword]
+                   [-fmt jpg|png|gif|tif|bmp] [-pr pagerange]
+                   [-jq jpegquality] [-j] [-tj]
+                   filename.pdf imagefile
 		
 * Convert PDF to image
-  galapdf [-opw ownerpassword] [-upw userpassword] [-pr pagerange]
-          [-r resolution] [-mono] [-gray] [-fmt jpg|png|gif|tif|bmp]
-          [-jq jpegquality] [-mp] [-tj] filename.pdf imagefile
+  galapdf toimgs [-opw ownerpassword] [-upw userpassword] [-pr pagerange]
+                 [-r resolution] [-mono] [-gray] [-fmt jpg|png|gif|tif|bmp]
+                 [-jq jpegquality] [-mp] [-tj]
+                 filename.pdf imagefile
 
 -enc    text encoding
 -eol    end of line
